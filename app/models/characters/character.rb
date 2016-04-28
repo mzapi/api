@@ -2,8 +2,8 @@ module Characters
   class Character < BaseModel
     self.table_name = "characters"
 
-    ignore_columns :class,
-                   :playerBytes,
+    bad_attribute_names :class
+    ignore_columns :playerBytes,
                    :playerBytes2,
                    :playerFlags,
                    :position_x,
