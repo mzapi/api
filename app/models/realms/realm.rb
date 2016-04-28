@@ -1,12 +1,21 @@
+require 'resolv'
+
 module Realms
   class Realm < BaseModel
     self.table_name = "realmlist"
 
+    # Hooks
+    before_create :assign_local_address
+
+    # Account joins
+    has_many :realm_characters, class_name: 'Realms::RealmCharacter', foreign_key: :realmid
+    has_many :accounts,         class_name: 'Realms::Account', through: :realm_characters
+
     # Attribute Aliases
     alias_attribute :type,            :icon
     alias_attribute :status,          :realmflags
-    alias_attribute :allowedBuilds,  :realmbuilds
-    alias_attribute :ipAddress,      :address
+    alias_attribute :allowedBuilds,   :realmbuilds
+    alias_attribute :ipAddress,       :address
 
     # Begin Enumerations
     # These enumerations abstract the functionality of the
@@ -39,6 +48,10 @@ module Realms
       qa:   101
     }
 
+
+    def assign_local_address
+      self.localAddress = '127.0.0.1' if localAddress.blank?
+    end
 
   end
 end
