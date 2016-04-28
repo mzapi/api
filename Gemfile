@@ -5,6 +5,9 @@ gem 'mysql2', '>= 0.3.18', '< 0.5'          # Use mysql as the database for Acti
 gem 'puma', '~> 3.0'                        # Use Puma as the app server
 gem 'rack-cors'                             # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'ignorable'                             # Ignore database columns
+gem 'safe_attributes'                       # Rename database columns
+gem 'kaminari'                              # Pagination
+gem 'active_model_serializers'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 

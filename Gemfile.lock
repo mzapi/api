@@ -61,6 +61,8 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    active_model_serializers (0.9.5)
+      activemodel (>= 3.2)
     arel (7.0.0)
     builder (3.2.2)
     byebug (8.2.5)
@@ -77,6 +79,9 @@ GEM
     ignorable (0.3.0)
       activerecord (>= 3)
     json (1.8.3)
+    kaminari (0.16.3)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
@@ -112,6 +117,8 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    safe_attributes (1.0.10)
+      activerecord (>= 3.0.0)
     spring (1.7.1)
     spring-watcher-listen (2.0.0)
       listen (>= 2.7, < 4.0)
@@ -135,14 +142,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers
   byebug
   dotenv-rails
   ignorable
+  kaminari
   listen (~> 3.0.5)
   mysql2 (>= 0.3.18, < 0.5)
   puma (~> 3.0)
   rack-cors
   rails!
+  safe_attributes
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data

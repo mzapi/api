@@ -2909,3 +2909,257 @@ WHERE fk.referenced_column_name is not null
   [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
   [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
   [1m[36mCharacters::Character Load (0.3ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.2ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.3ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.2ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mRealms::Account Load (0.2ms)[0m  [1m[34mSELECT  `account`.* FROM `account` ORDER BY `account`.`id` ASC LIMIT 1[0m
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:10:00 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/realms"):
+  
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/tagged_logging.rb:70:in `tagged'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.0.alpha) lib/rack/runtime.rb:22:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.0.alpha) lib/rack/sendfile.rb:111:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/railties/lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:10:39 -0500
+  
+LoadError (Unable to autoload constant Api::V1::RealmsController, expected /Users/joshuat/Github/mzero-api/app/controllers/api/v1/realms_controller.rb to define it):
+  
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/dependencies.rb:512:in `load_missing_constant'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/dependencies.rb:203:in `const_missing'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/inflector/methods.rb:270:in `const_get'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/inflector/methods.rb:270:in `block in constantize'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/inflector/methods.rb:266:in `each'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/inflector/methods.rb:266:in `inject'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/inflector/methods.rb:266:in `constantize'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/dependencies.rb:583:in `get'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/dependencies.rb:614:in `constantize'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/http/request.rb:93:in `controller_class'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/routing/route_set.rb:44:in `controller'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/routing/route_set.rb:30:in `serve'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionview/lib/action_view/digestor.rb:12:in `call'
+rack (2.0.0.alpha) lib/rack/etag.rb:25:in `call'
+rack (2.0.0.alpha) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.0.alpha) lib/rack/head.rb:12:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activerecord/lib/active_record/migration.rb:558:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/callbacks.rb:90:in `run_callbacks'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/tagged_logging.rb:70:in `tagged'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.0.alpha) lib/rack/runtime.rb:22:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/actionpack/lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.0.alpha) lib/rack/sendfile.rb:111:in `call'
+/Users/joshuat/.rvm/gems/ruby-head@mzero/bundler/gems/rails-afc4976cc73d/railties/lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:11:12 -0500
+Processing by Api::V1::RealmsController#index as HTML
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` LIMIT 25 OFFSET 0[0m
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `respond_with' for #<Api::V1::RealmsController:0x007f8b23c49900>):
+  
+app/controllers/api/v1/realms_controller.rb:7:in `index'
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:11:44 -0500
+Processing by Api::V1::RealmsController#index as HTML
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` LIMIT 25 OFFSET 0[0m
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:22:57 -0500
+Processing by Api::V1::RealmsController#index as HTML
+  [1m[36mRealms::Realm Load (0.3ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` LIMIT 20 OFFSET 0[0m
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `object' for #<Api::V1::RealmsController:0x007fb0a8b62b90>):
+  
+app/controllers/api/v1/api_controller.rb:7:in `meta_for'
+app/controllers/api/v1/api_controller.rb:17:in `respond_with'
+app/controllers/api/v1/realms_controller.rb:8:in `index'
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:23:23 -0500
+Processing by Api::V1::RealmsController#index as HTML
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `realmlist`[0m
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` LIMIT 20 OFFSET 0[0m
+Completed 200 OK in 19ms (Views: 8.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:32:22 -0500
+Processing by Api::V1::RealmsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (compile error):
+  
+app/controllers/api/v1/realms_controller.rb:6:in `index'
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` ORDER BY `realmlist`.`id` ASC LIMIT 1[0m
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:34:56 -0500
+Processing by Api::V1::RealmsController#index as HTML
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `realmlist`[0m
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` LIMIT 20 OFFSET 0[0m
+Completed 200 OK in 87ms (Views: 21.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:37:58 -0500
+Processing by Api::V1::RealmsController#index as HTML
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `realmlist`[0m
+  [1m[36mRealms::Realm Load (0.1ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` LIMIT 20 OFFSET 0[0m
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.2ms)
+
+
+  
+NoMethodError (undefined method `ip_address' for #<Realms::Realm:0x007fec3b230e68>):
+  
+app/controllers/api/v1/api_controller.rb:18:in `respond_with'
+app/controllers/api/v1/realms_controller.rb:8:in `index'
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:38:28 -0500
+Processing by Api::V1::RealmsController#index as HTML
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `realmlist`[0m
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` LIMIT 20 OFFSET 0[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `ipAddress' for #<Realms::Realm:0x007fec3aa40f28>):
+  
+app/controllers/api/v1/api_controller.rb:18:in `respond_with'
+app/controllers/api/v1/realms_controller.rb:8:in `index'
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:38:45 -0500
+Processing by Api::V1::RealmsController#index as HTML
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `realmlist`[0m
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` LIMIT 20 OFFSET 0[0m
+Completed 200 OK in 15ms (Views: 6.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:39:20 -0500
+Processing by Api::V1::RealmsController#index as HTML
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `realmlist`[0m
+  [1m[36mRealms::Realm Load (0.1ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` LIMIT 20 OFFSET 0[0m
+Completed 200 OK in 16ms (Views: 7.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/realms/1" for 127.0.0.1 at 2016-04-28 09:40:05 -0500
+Processing by Api::V1::RealmsController#show as HTML
+  Parameters: {"id"=>"1"}
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` WHERE `realmlist`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 16ms (Views: 0.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/realms/1" for 127.0.0.1 at 2016-04-28 09:41:26 -0500
+Processing by Api::V1::RealmsController#show as HTML
+  Parameters: {"id"=>"1"}
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` WHERE `realmlist`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 15ms (Views: 0.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:42:43 -0500
+Processing by Api::V1::RealmsController#index as */*
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `realmlist`[0m
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` LIMIT 20 OFFSET 0[0m
+Completed 200 OK in 17ms (Views: 7.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/realms/1" for 127.0.0.1 at 2016-04-28 09:43:36 -0500
+Processing by Api::V1::RealmsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mRealms::Realm Load (0.3ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` WHERE `realmlist`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:48:51 -0500
+Processing by Api::V1::RealmsController#create as */*
+  Parameters: {"realm"=>{"name"=>"Test Realm", "ipAddress"=>"127.0.0.1", "localAddress"=>"127.0.0.1", "localSubnetMask"=>"255.255.255.0", "port"=>"8085", "type"=>"pvp", "status"=>"recommended", "timezone"=>"us", "allowedBuilds"=>"5875 6005 6141"}}
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `realmlist` (`name`, `icon`, `realmflags`, `timezone`, `realmbuilds`) VALUES ('Test Realm', 1, 64, 1, '5875 6005 6141')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 23ms (Views: 0.7ms | ActiveRecord: 1.8ms)
+
+
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT `realmlist`.* FROM `realmlist`[0m
+Started PUT "/api/v1/realms/2" for 127.0.0.1 at 2016-04-28 09:50:52 -0500
+Processing by Api::V1::RealmsController#update as */*
+  Parameters: {"realm"=>{"name"=>"Blackwing Lair (Second)", "ipAddress"=>"127.0.0.1", "localAddress"=>"127.0.0.1", "localSubnetMask"=>"255.255.255.0", "port"=>"8085", "type"=>"pvp", "status"=>"new_players", "timezone"=>"us", "allowedBuilds"=>"5875 6005 6141"}, "id"=>"2"}
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[36mRealms::Realm Load (0.3ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` WHERE `realmlist`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE `realmlist` SET `name` = 'Blackwing Lair (Second)', `realmflags` = 32 WHERE `realmlist`.`id` = 2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 23ms (Views: 0.7ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/api/v1/realms/2" for 127.0.0.1 at 2016-04-28 09:54:16 -0500
+Processing by Api::V1::RealmsController#destroy as */*
+  Parameters: {"id"=>"2"}
+Creating scope :test. Overwriting existing method Realms::Realm.test.
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT  `realmlist`.* FROM `realmlist` WHERE `realmlist`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `realmlist` WHERE `realmlist`.`id` = 2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 18ms (ActiveRecord: 1.4ms)
+
+
+  [1m[36mRealms::Realm Load (0.2ms)[0m  [1m[34mSELECT `realmlist`.* FROM `realmlist`[0m
+Started POST "/api/v1/realms" for 127.0.0.1 at 2016-04-28 09:54:47 -0500
+Processing by Api::V1::RealmsController#create as */*
+  Parameters: {"realm"=>{"name"=>"Test Realm", "ipAddress"=>"127.0.0.1", "localAddress"=>"127.0.0.1", "localSubnetMask"=>"255.255.255.0", "port"=>"8085", "type"=>"pvp", "status"=>"recommended", "timezone"=>"us", "allowedBuilds"=>"5875 6005 6141"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `realmlist` (`name`, `icon`, `realmflags`, `timezone`, `realmbuilds`) VALUES ('Test Realm', 1, 64, 1, '5875 6005 6141')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mRealms::Realm Load (0.3ms)[0m  [1m[34mSELECT `realmlist`.* FROM `realmlist`[0m
