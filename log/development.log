@@ -64,3 +64,2848 @@
   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('8753296576586822715')[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `account`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'account'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `account_banned`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'account_banned'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `db_version`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'db_version'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocsfields`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocsfields'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocsfields_localised`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocsfields_localised'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocslanguage`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocslanguage'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocssubtables`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocssubtables'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocssubtables_localised`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocssubtables_localised'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocstable`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocstable'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocstable_localised`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocstable_localised'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `ip_banned`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'ip_banned'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `realmcharacters`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `realmlist`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'realmlist'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `uptime`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'uptime'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `warden_log`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'account'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'account_banned'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'db_version'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'dbdocsfields'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'dbdocsfields_localised'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'dbdocslanguage'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'dbdocssubtables'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'dbdocssubtables_localised'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'dbdocstable'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'dbdocstable_localised'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'ip_banned'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'realmcharacters'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'realmlist'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'uptime'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'realmd'
+  AND fk.table_name = 'warden_log'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `areatrigger_tavern`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'areatrigger_tavern'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `areatrigger_teleport`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'areatrigger_teleport'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `battleground_events`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'battleground_events'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `battleground_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `battlemaster_entry`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'command'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `command`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `conditions`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_addon`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'creature_addon'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_ai_scripts`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'creature_ai_scripts'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_ai_summons`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'creature_ai_summons'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `creature_ai_texts`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'creature_ai_texts'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_battleground`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_equip_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_equip_template_raw`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `creature_item_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_linking`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_linking_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_loot_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_model_info`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_movement`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_movement_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_onkill_reputation`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `creature_template`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'creature_template'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_template_addon`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'creature_template_addon'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_template_classlevelstats`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_template_spells`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `custom_texts`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'custom_texts'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `db_script_string`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'db_script_string'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `db_scripts`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'db_scripts'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `db_version`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'db_version'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocsfields`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocsfields'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocsfields_localised`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocsfields_localised'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocslanguage`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocslanguage'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocsprogressquests`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocsprogressquests'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocssubtables`[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocssubtables'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocssubtables_localised`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocssubtables_localised'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocstable`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocstable'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocstable_localised`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocstable_localised'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `disables`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'disables'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `disenchant_loot_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `exploration_basexp`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `fishing_loot_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `game_event`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'game_event'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `game_event_creature`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `game_event_creature_data`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `game_event_gameobject`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `game_event_mail`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `game_event_quest`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `game_graveyard_zone`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `game_tele`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'game_tele'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `game_weather`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `gameobject`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `gameobject_battleground`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `gameobject_loot_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `gameobject_template`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'gameobject_template'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `gossip_menu`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `gossip_menu_option`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'gossip_menu_option'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `gossip_texts`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'gossip_texts'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `instance_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `item_enchantment_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `item_loot_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `item_required_target`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `item_template`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'item_template'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `locales_creature`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'locales_creature'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `locales_gameobject`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'locales_gameobject'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `locales_gossip_menu_option`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'locales_gossip_menu_option'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `locales_item`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'locales_item'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `locales_npc_text`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'locales_npc_text'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `locales_page_text`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'locales_page_text'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `locales_points_of_interest`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'locales_points_of_interest'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `locales_quest`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'locales_quest'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `mail_loot_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `mangos_string`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'mangos_string'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `npc_gossip`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `npc_text`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'npc_text'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `npc_trainer`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `npc_trainer_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `npc_vendor`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `npc_vendor_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `page_text`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'page_text'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pet_levelstats`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pet_name_generation`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'pet_name_generation'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `petcreateinfo_spell`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pickpocketing_loot_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `player_classlevelstats`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `player_levelstats`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `player_xp_for_level`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `playercreateinfo`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `playercreateinfo_action`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `playercreateinfo_item`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `playercreateinfo_spell`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'playercreateinfo_spell'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `points_of_interest`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'points_of_interest'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pool_creature`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'pool_creature'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pool_creature_template`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'pool_creature_template'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pool_gameobject`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'pool_gameobject'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pool_gameobject_template`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'pool_gameobject_template'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pool_pool`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'pool_pool'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pool_template`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'pool_template'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `quest_relations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `quest_template`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'quest_template'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `reference_loot_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `reputation_reward_rate`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `reputation_spillover_template`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'reserved_name'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `reserved_name`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `script_binding`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'script_binding'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `script_texts`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'script_texts'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `script_waypoint`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'script_waypoint'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `skill_fishing_base_level`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `skinning_loot_template`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_affect`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_area`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_bonus_data`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'spell_bonus_data'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_chain`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_elixir`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_facing`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_learn_spell`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_linked`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'spell_linked'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_pet_auras`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_proc_event`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_proc_item_enchant`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `spell_script_target`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_target_position`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `spell_threat`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `transports`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'transports'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `warden`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'warden'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'areatrigger_tavern'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'areatrigger_teleport'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'battleground_events'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'battleground_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'battlemaster_entry'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'command'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'conditions'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_addon'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_ai_scripts'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_ai_summons'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_ai_texts'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_battleground'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_equip_template'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_equip_template_raw'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_item_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_linking'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_linking_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_loot_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_model_info'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_movement'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_movement_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_onkill_reputation'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_template_addon'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_template_classlevelstats'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'creature_template_spells'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'custom_texts'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'db_script_string'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'db_scripts'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'db_version'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'dbdocsfields'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'dbdocsfields_localised'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'dbdocslanguage'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'dbdocsprogressquests'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'dbdocssubtables'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'dbdocssubtables_localised'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'dbdocstable'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'dbdocstable_localised'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'disables'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'disenchant_loot_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'exploration_basexp'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'fishing_loot_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'game_event'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'game_event_creature'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'game_event_creature_data'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'game_event_gameobject'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'game_event_mail'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'game_event_quest'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'game_graveyard_zone'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'game_tele'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'game_weather'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'gameobject'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'gameobject_battleground'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'gameobject_loot_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'gameobject_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'gossip_menu'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'gossip_menu_option'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'gossip_texts'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'instance_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'item_enchantment_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'item_loot_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'item_required_target'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'item_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'locales_creature'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'locales_gameobject'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'locales_gossip_menu_option'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'locales_item'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'locales_npc_text'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'locales_page_text'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'locales_points_of_interest'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'locales_quest'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'mail_loot_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'mangos_string'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'npc_gossip'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'npc_text'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'npc_trainer'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'npc_trainer_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'npc_vendor'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'npc_vendor_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'page_text'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'pet_levelstats'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'pet_name_generation'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'petcreateinfo_spell'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'pickpocketing_loot_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'player_classlevelstats'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'player_levelstats'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'player_xp_for_level'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'playercreateinfo'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'playercreateinfo_action'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'playercreateinfo_item'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'playercreateinfo_spell'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'points_of_interest'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'pool_creature'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'pool_creature_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'pool_gameobject'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'pool_gameobject_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'pool_pool'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'pool_template'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'quest_relations'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'quest_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'reference_loot_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'reputation_reward_rate'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'reputation_spillover_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'reserved_name'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'script_binding'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'script_texts'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'script_waypoint'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'skill_fishing_base_level'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'skinning_loot_template'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_affect'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_area'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_bonus_data'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_chain'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_elixir'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_facing'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_learn_spell'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_linked'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_pet_auras'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_proc_event'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_proc_item_enchant'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_script_target'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_target_position'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'spell_threat'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'transports'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mangos0'
+  AND fk.table_name = 'warden'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `ahbot_category`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'ahbot_category'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `ahbot_history`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'ahbot_history'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `ahbot_price`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'ahbot_price'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `ai_playerbot_names`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'ai_playerbot_names'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `ai_playerbot_random_bots`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'ai_playerbot_random_bots'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `auction`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `bugreport`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'bugreport'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_action`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_aura`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_battleground_data`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_gifts`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_homebind`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_honor_cp`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_instance`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_inventory`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_pet`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'character_pet'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_queststatus`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_reputation`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_skills`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_social`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_spell`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_spell_cooldown`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_stats`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_ticket`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'character_ticket'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_tutorial`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_whispers`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'character_whispers'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `characters`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'characters'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `corpse`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `creature_respawn`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `db_version`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'db_version'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocsfields`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocsfields'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocsfields_localised`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocsfields_localised'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocslanguage`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocslanguage'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocssubtables`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocssubtables'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocssubtables_localised`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocssubtables_localised'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocstable`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocstable'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocstable_localised`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocstable_localised'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `game_event_status`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `gameobject_respawn`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `group_instance`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `group_member`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `groups`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `guild`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'guild'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `guild_eventlog`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `guild_member`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'guild_member'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `guild_rank`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'guild_rank'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `instance`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'instance'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `instance_reset`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `item_instance`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'item_instance'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `item_loot`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `item_text`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'item_text'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `mail`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'mail'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `mail_items`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pet_aura`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pet_spell`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pet_spell_cooldown`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `petition`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'petition'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `petition_sign`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pvpstats_battlegrounds`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `pvpstats_players`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `saved_variables`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `warden_action`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `world`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'world'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'ahbot_category'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'ahbot_history'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'ahbot_price'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'ai_playerbot_names'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'ai_playerbot_random_bots'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'auction'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'bugreport'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_action'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_aura'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_battleground_data'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_gifts'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_homebind'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_honor_cp'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_instance'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_inventory'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_pet'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_queststatus'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_reputation'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_skills'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_social'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_spell'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_spell_cooldown'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_stats'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_ticket'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_tutorial'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_whispers'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'characters'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'corpse'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'creature_respawn'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'db_version'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocsfields'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocsfields_localised'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocslanguage'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocssubtables'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocssubtables_localised'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocstable'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocstable_localised'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'game_event_status'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'gameobject_respawn'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'group_instance'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'group_member'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'groups'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'guild'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'guild_eventlog'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'guild_member'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'guild_rank'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'instance'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'instance_reset'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'item_instance'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'item_loot'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'item_text'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'mail'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'mail_items'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'pet_aura'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'pet_spell'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'pet_spell_cooldown'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'petition'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'petition_sign'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'pvpstats_battlegrounds'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'pvpstats_players'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'saved_variables'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'warden_action'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'world'
+[0m
+  [1m[36mRealms::Realm Load (0.4ms)[0m  [1m[34mSELECT `realmlist`.* FROM `realmlist`[0m
+  [1m[36mWorlds::Item Load (13.5ms)[0m  [1m[34mSELECT  `item_template`.* FROM `item_template` ORDER BY `item_template`.`entry` ASC LIMIT 1[0m
+  [1m[36mWorlds::Item Load (9.0ms)[0m  [1m[34mSELECT  `item_template`.* FROM `item_template` ORDER BY `item_template`.`entry` DESC LIMIT 1[0m
+  [1m[36mWorlds::Item Load (154.2ms)[0m  [1m[34mSELECT `item_template`.* FROM `item_template`[0m
+  [1m[36mWorlds::Item Load (0.3ms)[0m  [1m[34mSELECT  `item_template`.`entry`, `item_template`.`class` FROM `item_template` LIMIT 1[0m
+  [1m[36mWorlds::Item Load (0.3ms)[0m  [1m[34mSELECT  `item_template`.`entry`, `item_template`.`class` FROM `item_template` LIMIT 1[0m
+  [1m[36mWorlds::Item Load (0.3ms)[0m  [1m[34mSELECT  `item_template`.`entry`, `item_template`.`class` FROM `item_template` LIMIT 1[0m
+  [1m[36mWorlds::Item Load (0.2ms)[0m  [1m[34mSELECT  `item_template`.`entry`, `item_template`.`class` FROM `item_template` ORDER BY `item_template`.`entry` ASC LIMIT 1[0m
+  [1m[36mWorlds::Command Load (0.5ms)[0m  [1m[34mSELECT `command`.* FROM `command`[0m
+  [1m[36mWorlds::Command Load (0.3ms)[0m  [1m[34mSELECT  `command`.* FROM `command` ORDER BY `command`.`name` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (4.8ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.3ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (6.4ms)[0m  [1m[34mSELECT `characters`.`name` FROM `characters`[0m
+  [1m[36mCharacters::Character Load (7.9ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.2ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `id` FROM `characters`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `characters`.`guid` FROM `characters`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `characters`.`guid`, `characters`.`account`, `characters`.`name` FROM `characters`[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `characters`.`guid`, `characters`.`account`, `characters`.`name` FROM `characters` WHERE `characters`.`guid` = 3[0m
+  [1m[36mCharacters::Character Load (2.5ms)[0m  [1m[34mSELECT `characters`.* FROM `characters` WHERE `characters`.`guid` = 3[0m
+  [1m[36mCharacters::Character Load (0.2ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.3ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[35m (18.9ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (16.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7372101747053633940', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-04-28 13:17:20', '2016-04-28 13:17:20')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('7372101747053633940')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `ahbot_category`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'ahbot_category'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `ahbot_history`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'ahbot_history'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `ahbot_price`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'ahbot_price'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `ai_playerbot_names`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'ai_playerbot_names'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `ai_playerbot_random_bots`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'ai_playerbot_random_bots'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `auction`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `bugreport`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'bugreport'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_action`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_aura`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_battleground_data`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `character_gifts`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_homebind`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `character_honor_cp`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_instance`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `character_inventory`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_pet`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'character_pet'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_queststatus`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_reputation`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_skills`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_social`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `character_spell`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `character_spell_cooldown`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `character_stats`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `character_ticket`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'character_ticket'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_tutorial`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `character_whispers`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'character_whispers'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `characters`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'characters'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `corpse`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `creature_respawn`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `db_version`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'db_version'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocsfields`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocsfields'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocsfields_localised`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocsfields_localised'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocslanguage`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocslanguage'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocssubtables`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocssubtables'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocssubtables_localised`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocssubtables_localised'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocstable`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocstable'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `dbdocstable_localised`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'dbdocstable_localised'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `game_event_status`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `gameobject_respawn`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `group_instance`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `group_member`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `groups`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `guild`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'guild'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `guild_eventlog`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `guild_member`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'guild_member'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `guild_rank`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'guild_rank'[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW CREATE TABLE `instance`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'instance'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `instance_reset`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `item_instance`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'item_instance'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `item_loot`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `item_text`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'item_text'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `mail`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'mail'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `mail_items`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pet_aura`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pet_spell`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `pet_spell_cooldown`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `petition`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'petition'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `petition_sign`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `pvpstats_battlegrounds`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `pvpstats_players`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `saved_variables`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `warden_action`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `world`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'world'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'ahbot_category'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'ahbot_history'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'ahbot_price'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'ai_playerbot_names'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'ai_playerbot_random_bots'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'auction'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'bugreport'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_action'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_aura'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_battleground_data'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_gifts'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_homebind'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_honor_cp'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_instance'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_inventory'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_pet'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_queststatus'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_reputation'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_skills'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_social'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_spell'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_spell_cooldown'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_stats'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_ticket'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_tutorial'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'character_whispers'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'characters'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'corpse'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'creature_respawn'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'db_version'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocsfields'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocsfields_localised'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocslanguage'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocssubtables'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocssubtables_localised'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocstable'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'dbdocstable_localised'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'game_event_status'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'gameobject_respawn'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'group_instance'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'group_member'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'groups'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'guild'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'guild_eventlog'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'guild_member'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'guild_rank'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'instance'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'instance_reset'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'item_instance'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'item_loot'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'item_text'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'mail'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'mail_items'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'pet_aura'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'pet_spell'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'pet_spell_cooldown'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'petition'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'petition_sign'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'pvpstats_battlegrounds'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'pvpstats_players'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'saved_variables'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'warden_action'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'character0'
+  AND fk.table_name = 'world'
+[0m
+  [1m[36mCharacters::Character Load (0.2ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.3ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `characters`.`class` FROM `characters`[0m
+  [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.3ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.3ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.3ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.2ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.4ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m
+  [1m[36mCharacters::Character Load (0.3ms)[0m  [1m[34mSELECT  `characters`.* FROM `characters` ORDER BY `characters`.`guid` ASC LIMIT 1[0m

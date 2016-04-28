@@ -4,7 +4,7 @@ gem 'rails', github: "rails/rails"
 gem 'mysql2', '>= 0.3.18', '< 0.5'          # Use mysql as the database for Active Record
 gem 'puma', '~> 3.0'                        # Use Puma as the app server
 gem 'rack-cors'                             # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-
+gem 'ignorable'                             # Ignore database columns
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 
