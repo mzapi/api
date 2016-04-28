@@ -1,24 +1,15 @@
-# README
+# MaNGOS Zero API 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The goal of this project is the provide an abstracted layer which makes interacting with the MaNGOS Zero Database and Core extremely simple and accessible. Primarily this API is being developed in conjunction with a personal Node.js desktop application which serves as an administrative tool for Game Masters and Administrators.
 
-Things you may want to cover:
+## API Documentation
 
-* Ruby version
+API Documentation is being maintained as well as a mock server through Apiary.
 
-* System dependencies
+  - [Realms Module](http://docs.mzeroapirealms.apiary.io)
 
-* Configuration
 
-* Database creation
+## Stay Tuned
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Unfortunately we're just starting out!  Stay tuned and follow this repository for updates and code releases.
+>>>>>>> 0d6d3115be0afe4dc798046fb63986571325e5dd
