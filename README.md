@@ -20,7 +20,7 @@ For your convenience and testing purposes, a Postman collection has been created
 
 ## Status
 
-  - Realms Module: In Progress, realms endpoint completed.  In branch feature/realm-module
+  - Realms Module: Completed, see documentation for endpoint definitions
 
   - Characters Module: In Progress in branch feature/characters-module
 

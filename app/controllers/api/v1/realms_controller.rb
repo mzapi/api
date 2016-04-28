@@ -28,7 +28,6 @@ module Api::V1
       @realm.destroy!
     end
 
-
     private
 
     def realm_params
