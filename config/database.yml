@@ -1,0 +1,19 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  host: <%= ENV['API_DB_ADDRESS'] %>
+  username: <%= ENV['API_DB_USER'] %>
+  password: <%= ENV['API_DB_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: <%= ENV['API_DB'] %>_development
+
+test:
+  <<: *default
+  database: <%= ENV['API_DB'] %>_test
+
+production:
+  <<: *default
+  database: <%= ENV['API_DB'] %>

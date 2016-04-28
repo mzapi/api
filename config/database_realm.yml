@@ -1,0 +1,18 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  database:   <%= ENV['REALM_DB'] %>
+  host:       <%= ENV['REALM_DB_ADDRESS'] %>
+  username:   <%= ENV['REALM_DB_USER'] %>
+  password:   <%= ENV['REALM_DB_PASSWORD'] %>
+
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
